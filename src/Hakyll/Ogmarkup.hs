@@ -14,5 +14,5 @@ import Hakyll
 ogmarkupCompile :: (GenConf c o)
                 => c
                 -> Compiler (Item o)
-ogmarkupCompile conf = do getResourceBody >>= withItemBody (return . ogmarkup' ByLine conf)
-    where ogmarkup' strat = flip $ ogmarkup strat
+ogmarkupCompile conf = do getResourceBody >>= withItemBody (return . ogmarkup' conf)
+    where ogmarkup' = flip $ ogmarkup

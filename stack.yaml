@@ -5,6 +5,6 @@ extra-package-dbs: []
 packages:
 - '.'
 extra-deps:
-- hakyll-4.8.3.2
-- ogmarkup-2.1
-resolver: nightly-2016-07-29
+- hakyll-4.9.5.1
+- ogmarkup-3.0.0
+resolver: lts-8.2
